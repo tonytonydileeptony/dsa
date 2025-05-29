@@ -1,0 +1,22 @@
+public class DirectionCoordinates{
+     public static void main(String []args){
+    String directions="URRDDL";
+    int x=0,y=0;
+   
+    for(char c : directions.toCharArray()){
+        switch(c){
+            case 'U':y++;
+            break;
+            case 'D':y--;
+            break;
+            case 'R':x++;
+            break;
+            case 'L':x--;
+            break;
+        }
+        
+    }
+    System.out.print("("+x+","+y+")");
+    
+}
+}
