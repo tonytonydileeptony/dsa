@@ -1,0 +1,55 @@
+Basics & Operations
+
+Traversal, insertion, deletion
+
+Searching in arrays (linear and binary search)
+
+Sorting basics (bubble, insertion, selection)
+
+Two Pointers Technique
+
+Moving pointers from both ends for problems like
+
+Pair sum
+
+Reverse array
+
+Removing duplicates
+
+Container with most water
+
+Sliding Window
+
+Fixed-size window problems (max/min sum of subarrays)
+
+Variable-size window problems (smallest subarray with sum ≥ K)
+
+Prefix Sum / Cumulative Sum
+
+Efficient range sum queries
+
+Subarray sum problems
+
+Frequency Counting & Hashing
+
+Counting occurrences
+
+Finding duplicates
+
+Majority element
+
+Rearrangement & Partitioning
+
+Move zeroes to the end
+
+Dutch National Flag problem (sort 0s,1s,2s)
+
+Partition around pivot (used in QuickSort)
+
+Matrix as 2D Arrays
+
+Traversal
+
+Rotation
+
+Search in sorted matrix
