@@ -1,0 +1,23 @@
+Maxsubstring
+
+class Solution {
+  public static int maxlength(String s){
+    Map<Character,Integer> map=new HashMap();
+    int left=0;
+    int maxlength=0;
+    for(int right=0;right<s.length();right++){
+      char c=s.charAt(right);
+      if(map.containsKey(c)&&map.get(c)>=left){
+        left=map.get(c)+1;
+      }
+      map.put(c,right);
+      maxlength=Math.max(maxlength,right-left+1);
+    }
+
+  return maxlength;
+  }
+ public static void main(String[] args) {
+        String nums ="abcabcd" ;
+        
+       System.out.print( maxlength(nums));
+ }}
