@@ -25,6 +25,52 @@ class Solution {
 
 
 
+Removing Duplicates in the array
+/*
+ * Click `Run` to execute the snippet below!
+ */
+
+import java.io.*;
+import java.util.*;
+
+/*
+ * To execute Java, please define "static void main" on a class
+ * named Solution.
+ *
+ * If you need more classes, simply define them inline.
+ */
+ 
+
+class Solution {
+  public static List<Integer> maxWaterStorage(int[] arr){
+    List<Integer> list=new ArrayList<>();
+    for(int num:arr){
+      int index=Math.abs(num)-1;
+      if(arr[index]<0){
+       list.add(Math.abs(num));
+      }
+      else{
+        arr[index]=-arr[index];
+      }
+    }
+ 
+   
+   
+
+return list;
+
+  }
+ public static void main(String[] args) {
+        int[] nums = {4, 3, 2, 7, 8, 2, 3, 1};
+        List<Integer> result = maxWaterStorage(nums);
+
+        System.out.println("Merged Intervals:"+ result.toString());
+        
+    }
+}
+
+
+
 
 
 
