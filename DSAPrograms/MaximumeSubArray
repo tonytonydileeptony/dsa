@@ -299,3 +299,41 @@ return null;
         
     }
 }
+Missing Value in array
+
+/*
+ * Click `Run` to execute the snippet below!
+ */
+
+import java.io.*;
+import java.util.*;
+
+import javax.security.auth.kerberos.KerberosPrincipal;
+
+/*
+ * To execute Java, please define "static void main" on a class
+ * named Solution.
+ *
+ * If you need more classes, simply define them inline.
+ */
+ 
+
+class Solution {
+  public static int missIngValue(int []nums){
+    int n=nums.length;
+    int expectedsum=n*(n+1)/2;
+    int currentsum=0;
+    for(int num:nums)
+{
+  currentsum+=num;
+} 
+return expectedsum-currentsum;  
+  
+
+  }
+ public static void main(String[] args) {
+        int[] nums = {0,1,3,5,4};
+        int k=8;
+       System.out.print( missIngValue(nums));
+ }}
+
