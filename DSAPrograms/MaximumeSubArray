@@ -253,3 +253,49 @@ return arr;
     }
 }
 
+/*
+ * Click `Run` to execute the snippet below!
+ */
+
+import java.io.*;
+import java.util.*;
+
+import javax.security.auth.kerberos.KerberosPrincipal;
+
+/*
+ * To execute Java, please define "static void main" on a class
+ * named Solution.
+ *
+ * If you need more classes, simply define them inline.
+ */
+reversing an array with target value; 
+
+class Solution {
+  public static void reverseArray(int []nums,int k){
+    k=k%nums.length;
+     //int [] arr=new int[nums.length];
+    reverse(nums,0,nums.length-1);
+    reverse(nums,0,k-1);
+    reverse(nums,k,nums.length-1);
+    
+  }
+  public static int[] reverse(int[] arr,int start,int end){
+  while(start<end){
+    int temp=arr[start];
+    arr[start++]=arr[end];
+    arr[end--]=temp;
+  }
+    
+
+return null;
+
+  }
+ public static void main(String[] args) {
+        int[] nums = {4, 3, 2, 7, 8, 2, 3, 1};
+        int k=8;
+        reverseArray(nums,k);
+        for(int i=0;i<nums.length;i++)
+        System.out.print(" "+ nums[i]);
+        
+    }
+}
